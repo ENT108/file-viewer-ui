@@ -3,14 +3,14 @@
   "type": "DIRECTORY",
   "contents": [
     {
+      "name": "README.md",
+      "type": "FILE",
+      "contents": "# File Viewver UI\n###### for Starburst\n\n### Architecture\nThis project was bootstrapped with `create-react-app`. It's a plain ReactJS application that uses React hooks for state management. I used `react-bootstrap` to build the UI. I tried to keep it as simple as possible to deliver the requested features.\n\n### High volume of files\nTo handle high volume of files:\n- the app's UI would need to be checked for very log file list\n- `parseFiles` and `getFiles` would need to work on chunked data\n- in extremly nested diretory structures: a Map key (where I store file paths) is limited to string max length in JS, that is 2^30\n- file list pagination could leverage chunks\n\n### Sources\nI did not use external souces intensively as I picked knowm tools for the application. Nerevtheless I visited a few times these pages:\n- [reactjs.org](https://reactjs.org/)\n- [react-bootstrap.github.io](https://react-bootstrap.github.io/)\n- plus some [stackoverflow.com](https://stackoverflow.com/) obviously\n\n### 3rd party libs\n- [reactjs.org](https://reactjs.org/)\n- [Bootstrap](https://getbootstrap.com/)\n- [react-bootstrap.github.io](https://react-bootstrap.github.io/)\n- [Jest](https://jestjs.io/)\n\n### Time spent\nCa. 5h. (with writing this doc)\n\n### Usage\nReplace `dataSource.json` file with your own data source file and run the requested shell scripts for your environment (`run.sh`, `build.sh`).\n\n`build.sh` will build a production ready package in `./build` that you can deploy.\n\nOn top of that you can use the standard `yarn` commands:\n- `yarn` to pull dependencies\n- `yarn start` to run development server\n- `yarn test` to run basic tests based on Jest"
+    },
+    {
       "name": "install.log",
       "type": "FILE",
       "contents": "​[INFO] Running 'yarn install'​\n​[INFO] yarn install v1.21.1​\n​[INFO] [1/4] Resolving packages..."
-    },
-    {
-      "name": "README.md",
-      "type": "FILE",
-      "contents": "### file-viewer-ui"
     },
     {
       "name": "Private",
@@ -31,7 +31,7 @@
               "contents": "[INFO]"
             },
             {
-              "name": "README.md",
+              "name": "README-old.md",
               "type": "FILE",
               "contents": "### file-viewer-ui"
             },

@@ -1,4 +1,4 @@
-# File Viewver UI
+# File Viewer UI
 ###### for Starburst
 
 ### Architecture
@@ -8,7 +8,8 @@ This project was bootstrapped with `create-react-app`. It's a plain ReactJS appl
 To handle high volume of files:
 - the app's UI would need to be checked for very log file list
 - `parseFiles` and `getFiles` would need to work on chunked data
-- file list pagination could leverage chunks
+- file list pagination/lazy loading could leverage chunks
+- in extremly nested diretory structures: a Map key (where I store file paths) is limited to string max length in JS, that is 2^30
 
 ### Sources
 I did not use external souces intensively as I picked knowm tools for the application. Nerevtheless I visited a few times these pages:
@@ -26,7 +27,11 @@ I did not use external souces intensively as I picked knowm tools for the applic
 Ca. 5h. (with writing this doc)
 
 ### Usage
-Run the requested shell scripts for your environment (`run.sh`, `build.sh`). On top of that you can use the standard `yarn` commands:
+Replace `dataSource.json` file with your own data source file and run the requested shell scripts for your environment (`run.sh`, `build.sh`).
+
+`build.sh` will build a production ready package in `./build` that you can deploy.
+
+On top of that you can use the standard `yarn` commands:
 - `yarn` to pull dependencies
 - `yarn start` to run development server
-- `yarn test` to run basic tests
+- `yarn test` to run basic tests based on Jest

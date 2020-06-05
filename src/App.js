@@ -19,10 +19,9 @@ function App() {
   return (
     <Container fluid className="h-100 py-4">
       <Row className="h-100">
-        <Col xs={12} md={3} className="h-100 overflow-auto">
+        <Col xs={12} md={3} className="h-100">
           <FileList
             files={files}
-            filter={filter}
             setFilter={setFilter}
             setPreview={setPreview}
           />
