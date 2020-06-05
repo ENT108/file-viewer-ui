@@ -12,11 +12,6 @@ body {
   height: 100%;
 }
 
-/* input.form-control,
-input::placeholder {
-  font-size: small;
-} */
-
 .list-group-item {
   font-size: small;
 }

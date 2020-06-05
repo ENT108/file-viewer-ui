@@ -5,7 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { SentencesEnum } from "../constants";
 
 const FileList = ({ files, filter, setFilter, setPreview }) => (
-  <>
+    <div className="verflow-auto">
     <InputGroup className="mb-2" size="sm">
       <FormControl
         placeholder={SentencesEnum.search}
@@ -26,7 +26,7 @@ const FileList = ({ files, filter, setFilter, setPreview }) => (
         </ListGroup.Item>
       ))}
     </ListGroup>
-  </>
+    </div>
 );
 
 export default FileList;
