@@ -1,4 +1,4 @@
-import dataSourceMock from './dataSourceMock.json'
+import dataSourceMock from '../data/dataSourceMock.json'
 import {parseFiles, getFiles} from './dataTools'
 
 test('parsing of data source works', () => {

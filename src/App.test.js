@@ -1,8 +1,8 @@
 import React from 'react'
 import {fireEvent, render} from '@testing-library/react'
 import App from './App'
-import dataSourceMock from './dataSourceMock.json'
-import {parseFiles} from './dataTools'
+import dataSourceMock from './data/dataSourceMock.json'
+import {parseFiles} from './tools/dataTools'
 
 const mock = parseFiles(dataSourceMock)
 

@@ -4,7 +4,7 @@ import "./App.css"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import {getFiles} from "./dataTools"
+import {getFiles} from "./tools/dataTools"
 import FileList from "./components/FileList"
 import FilePreview from "./components/FilePreview"
 
@@ -16,7 +16,7 @@ const App = ({ data }) => {
   return (
     <Container fluid className="h-100 py-4">
       <Row className="h-100">
-        <Col xs={12} md={3} className="h-100 d-flex flex-column">
+        <Col xs={12} md={5} lg={4} xl={3} className="h-100 d-flex flex-column">
           <FileList
             files={files}
             setFilter={setFilter}

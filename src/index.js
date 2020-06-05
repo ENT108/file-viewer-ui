@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import dataSource from "./dataSource.json";
-import { parseFiles } from "./dataTools";
+import dataSource from "./data/dataSource.json";
+import { parseFiles } from "./tools/dataTools";
 
 const data = parseFiles(dataSource);
 
