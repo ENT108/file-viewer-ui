@@ -1,20 +1,17 @@
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import dataSource from "./dataSource.json";
-import { parseFiles, getFiles } from "./dataTools";
-import FileList from "./components/FileList";
-import FilePreview from "./components/FilePreview";
+import React, {useState} from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./App.css"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import {getFiles} from "./dataTools"
+import FileList from "./components/FileList"
+import FilePreview from "./components/FilePreview"
 
-const data = parseFiles(dataSource);
-
-function App() {
-  const [preview, setPreview] = useState(null);
-  const [filter, setFilter] = useState(null);
-  const files = getFiles(data, filter);
+const App = ({ data }) => {
+  const [preview, setPreview] = useState(null)
+  const [filter, setFilter] = useState(null)
+  const files = getFiles(data, filter)
 
   return (
     <Container fluid className="h-100 py-4">
@@ -31,7 +28,7 @@ function App() {
         </Col>
       </Row>
     </Container>
-  );
+  )
 }
 
-export default App;
+export default App

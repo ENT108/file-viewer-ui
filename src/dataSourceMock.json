@@ -1,0 +1,27 @@
+{
+  "name": "/",
+  "type": "DIRECTORY",
+  "contents": [
+    {
+      "name": "one.txt",
+      "type": "FILE",
+      "contents": "one"
+    },
+    {
+      "name": "two.txt",
+      "type": "FILE",
+      "contents": "two"
+    },
+    {
+      "name": "test-dir",
+      "type": "DIRECTORY",
+      "contents": [
+        {
+          "name": "three.txt",
+          "type": "FILE",
+          "contents": "three"
+        }
+      ]
+    }
+  ]
+}

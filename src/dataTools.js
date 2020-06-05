@@ -4,8 +4,7 @@ let fileMap = new Map()
 
 export const parseFiles = (data, parent) => {
   const addFile = element => {
-    const cont = element.contents
-    fileMap.set(`${parent}${element.name}`, cont)
+    fileMap.set(`${parent}${element.name}`, element.contents)
   }
 
   if (data.type === EntityTypeEnum.FILE) {
@@ -29,4 +28,4 @@ export const getFiles = (data, filter) => Array.from(data.keys())
     else if (!filter) return file
     else return null
   })
-  .filter((file) => file);
+  .filter((file) => file)
