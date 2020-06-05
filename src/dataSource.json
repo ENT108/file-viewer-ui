@@ -1,0 +1,54 @@
+{
+  "name": "/",
+  "type": "DIRECTORY",
+  "contents": [
+    {
+      "name": "install.log",
+      "type": "FILE",
+      "contents": "[INFO]"
+    },
+    {
+      "name": "README.md",
+      "type": "FILE",
+      "contents": "### file-viewer-ui"
+    },
+    {
+      "name": "Private",
+      "type": "DIRECTORY",
+      "contents": [
+        {
+          "name": "abc2.txt",
+          "type": "FILE",
+          "contents": "Lorem ipsum..."
+        },
+        {
+          "name": "Adam",
+          "type": "DIRECTORY",
+          "contents": [
+            {
+              "name": "install.log",
+              "type": "FILE",
+              "contents": "[INFO]"
+            },
+            {
+              "name": "README.md",
+              "type": "FILE",
+              "contents": "### file-viewer-ui"
+            },
+            {
+              "name": "Documents",
+              "type": "DIRECTORY",
+              "contents": [
+                {
+                  "name": "abc.txt",
+                  "type": "FILE",
+                  "contents": "Lorem ipsum..."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
