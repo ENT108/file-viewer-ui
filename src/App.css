@@ -10,10 +10,24 @@ body {
   font-size: small;
 }
 
+.list-group-item:focus {
+  outline: none;
+}
+
 .output {
-  background-color: #252a31;
+  background-color: #2E3338;
   color: #17f126;
   padding: 2em;
   display: flex;
   flex: 1;
+}
+
+Button#close {
+  border-radius: 5px 5px 0 0;
+}
+
+span#close-text {
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 3px;
 }

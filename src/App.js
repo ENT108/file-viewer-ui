@@ -4,6 +4,7 @@ import "./App.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
 import ListGroup from "react-bootstrap/ListGroup";
 import dataSource from "./dataSource.json";
@@ -13,7 +14,7 @@ function App() {
   const [preview, setPreview] = useState(null);
   const [filter, setFilter] = useState(null);
   const data = parseFiles(dataSource);
-  const files = Array.from(parseFiles(dataSource).keys())
+  const files = Array.from(data.keys())
     .map((file) => {
       if (filter && file.toLowerCase().search(filter) > -1) return file;
       else if (!filter) return file;
@@ -47,9 +48,13 @@ function App() {
         {preview && (
           <Col>
             <div className="rounded">
-              {/* <div onClick={() => setFilter(null)}>
-              <span role="img">❌</span>
-            </div> */}
+              <Button
+                id="close"
+                variant="dark"
+                onClick={() => setPreview(null)}
+              >
+                <span id="close-text">close</span>
+              </Button>
               <code className="output">{data.get(preview)}</code>
             </div>
           </Col>
