@@ -23,8 +23,8 @@ function App() {
     .filter((file) => file);
 
   return (
-    <Container fluid className="mt-5">
-      <Row>
+    <Container fluid className="">
+      <Row className="">
         <Col xs={12} md={3}>
           <FormControl
             placeholder="Search..."
@@ -45,7 +45,7 @@ function App() {
             ))}
           </ListGroup>
         </Col>
-        {preview && (
+        {preview ? (
           <Col>
             <div className="rounded">
               <Button
@@ -55,10 +55,10 @@ function App() {
               >
                 <span id="close-text">close</span>
               </Button>
-              <code className="output">{data.get(preview)}</code>
+              <code className="output">{decodeURI(data.get(preview))}</code>
             </div>
           </Col>
-        )}
+        ) : <h4>Pick a file...</h4>}
       </Row>
     </Container>
   );

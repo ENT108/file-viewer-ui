@@ -4,7 +4,8 @@ let fileMap = new Map()
 
 export const parseFiles = (data, parent) => {
   const addFile = element => {
-    fileMap.set(`${parent}${element.name}`, element.contents)
+    const cont = encodeURI(element.contents)
+    fileMap.set(`${parent}${element.name}`, cont)
   }
 
   if (data.type === entityType.FILE) {

@@ -15,11 +15,13 @@ body {
 }
 
 .output {
+  white-space: break-spaces;
   background-color: #2E3338;
   color: #17f126;
   padding: 2em;
   display: flex;
   flex: 1;
+  overflow-y: auto;
 }
 
 Button#close {
