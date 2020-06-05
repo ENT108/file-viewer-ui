@@ -16,7 +16,7 @@ const App = ({ data }) => {
   return (
     <Container fluid className="h-100 py-4">
       <Row className="h-100">
-        <Col xs={12} md={3} className="h-100">
+        <Col xs={12} md={3} className="h-100 d-flex flex-column">
           <FileList
             files={files}
             setFilter={setFilter}
