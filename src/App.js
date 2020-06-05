@@ -23,9 +23,9 @@ function App() {
     .filter((file) => file);
 
   return (
-    <Container fluid className="">
-      <Row className="">
-        <Col xs={12} md={3}>
+    <Container fluid className="h-100 py-4">
+      <Row className="h-100">
+        <Col xs={12} md={3} className="h-100">
           <FormControl
             placeholder="Search..."
             aria-label="Search"
@@ -46,19 +46,15 @@ function App() {
           </ListGroup>
         </Col>
         {preview ? (
-          <Col>
-            <div className="rounded">
-              <Button
-                id="close"
-                variant="dark"
-                onClick={() => setPreview(null)}
-              >
-                <span id="close-text">close</span>
-              </Button>
-              <code className="output">{decodeURI(data.get(preview))}</code>
-            </div>
+          <Col className="h-100 d-flex flex-column">
+            <Button id="close" variant="dark" onClick={() => setPreview(null)}>
+              <span id="close-text">close file</span>
+            </Button>
+            <code className="output">{decodeURI(data.get(preview))}</code>
           </Col>
-        ) : <h4>Pick a file...</h4>}
+        ) : (
+          <h4>Pick a file...</h4>
+        )}
       </Row>
     </Container>
   );
