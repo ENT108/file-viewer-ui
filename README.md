@@ -1,5 +1,4 @@
 # File Viewer UI
-###### for Starburst
 
 ### Architecture
 This project was bootstrapped with `create-react-app`. It's a plain ReactJS application that uses React hooks for state management. I used `react-bootstrap` to build the UI. I tried to keep it as simple as possible to deliver the requested features.
