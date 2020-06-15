@@ -1,4 +1,4 @@
-import {EntityTypeEnum} from '../constants'
+import { EntityTypeEnum } from '../constants'
 
 let fileMap = new Map()
 
