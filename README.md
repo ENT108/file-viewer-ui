@@ -7,7 +7,7 @@ This project was bootstrapped with `create-react-app`. It's a plain ReactJS appl
 To handle high volume of files:
 - the app's UI would need to be checked for very log file list
 - `parseFiles` and `getFiles` would need to work on chunked data
-- file list pagination/lazy loading could leverage chunks
+- file list pagination/lazy loading could leverage the chunks
 - in extremly nested diretory structures: a Map key (where I store file paths) is limited to string max length in JS, that is 2^30
 
 ### Sources
