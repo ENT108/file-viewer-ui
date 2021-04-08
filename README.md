@@ -1,5 +1,10 @@
 # File Viewer UI
 
+![Screenshot 2021-04-08 at 09 57 40](https://user-images.githubusercontent.com/25681316/113989580-e0b9a300-9850-11eb-88f5-d90c8f62ba57.png)
+
+### What's the app does?
+It's a simple app to preview sourced text files.
+
 ### Architecture
 This project was bootstrapped with `create-react-app`. It's a plain ReactJS application that uses React hooks for state management. I used `react-bootstrap` to build the UI. I tried to keep it as simple as possible to deliver the requested features.
 
